@@ -235,9 +235,8 @@ export default function Project(){
                                 <p className="text-tiny text-white italic uppercase font-bold pt-1">Android malware detection</p>
                             </CardHeader>
                             <CardBody className="overflow-visible py-2 flex flex-col items-center">
-                                <p className='text-white font-medium text-lg text-left pl-4 pb-2'> In this project I have taken the EEG signals(time-series data) of patients with alzheimers 
-                                    disease and used multiple deep learning algorithms to classify them. This project is more advanced than previous researches on this topic because it doesn't have a time constraint
-                                    i.e., the duration of the signals can be of any length.
+                                <p className='text-white font-medium text-lg text-left pl-4 pb-2'> 
+                                    In this project I have built a model that classifies APKs as either malware or safe based on the methods, classes and the API calls. If classified as malware will then be classified into which malware familty it belongs to. I've used CNN and LSTM methods for this project.
                                 </p>
                                 <a href='https://github.com/ClassicBSK/APKMalwareDetector'>
                                     <Button variant="contained"> View Project</Button>
