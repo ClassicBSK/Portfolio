@@ -8,6 +8,8 @@ import prj3 from '../../../components/prj3.jpg'
 import prj4 from '../../../components/prj4.jpg'
 import prj5 from '../../../components/prj5.png'
 import prj6 from '../../../components/prj6.jpg'
+import prj7 from '../../../components/prj7.jpg'
+import prj8 from '../../../components/prj8.jpeg'
 import Image from 'next/image';
 import {Card, CardHeader, CardBody} from "@heroui/react"
 import { Button } from '@mui/material';
@@ -153,6 +155,39 @@ export default function Project(){
                         <Card className='py-4 border-2 border-dotted border-blue-400 w-[300px] rounded-xl'>
                             
                             <CardHeader className='pb-0 pt-2 px-4 flex-col items-center'>
+                                <div className='py-12'>
+                                    <Image
+                                    src={prj8}
+                                    alt="Card background"
+                                    className="object-cover rounded-xl"
+                                    width={250}
+                                    />
+                                </div>
+                                <p className="text-tiny text-white italic uppercase font-bold pt-3">Dental Disease detection</p>
+                            </CardHeader>
+                            <CardBody className="overflow-visible py-2 flex flex-col items-center">
+                                <p className='text-white font-medium text-lg text-left pl-4 pb-2'>
+                                    This project gets the Image of the user's mouth and segements teeth and other features needed for classification using mask rcnn, identifies the disease using a Resnet50 and mask rcnn hybrid model and finally explains the disease identified using the gpt-2 llm.
+                                </p>
+                                <a href='https://github.com/ClassicBSK/DentalApp'>
+                                    <Button variant="contained"> View Project</Button>
+                                </a>
+                            </CardBody>
+
+                        </Card>
+                    </motion.div>
+                    <motion.div
+                    initial={{
+                        scale:1
+                    }}
+                    whileHover={{
+                        scale:1.05
+                    }}
+                    className='w-[300px]'>
+                        
+                        <Card className='py-4 border-2 border-dotted border-blue-400 w-[300px] rounded-xl'>
+                            
+                            <CardHeader className='pb-0 pt-2 px-4 flex-col items-center'>
                                 <div className='h-[282px] flex items-center'>
                                     <Image
                                     src={prj3}
@@ -275,6 +310,35 @@ export default function Project(){
                                     has fungus or not.
                                 </p>
                                 <a >
+                                    <Button variant="contained"> View Project</Button>
+                                </a>
+                            </CardBody>
+
+                        </Card>
+                    </motion.div>
+                    <motion.div
+                    initial={{
+                        scale:1
+                    }}
+                    whileHover={{
+                        scale:1.05
+                    }}
+                    className='w-[300px]'>
+                        
+                        <Card className='py-4 border-2 border-dotted border-blue-400 w-[300px] rounded-xl'>
+                            
+                            <CardHeader className='pb-0 pt-2 px-4 flex-col items-center'>
+                                <Image
+                                src={prj7}
+                                alt="Card background"
+                                className="object-cover rounded-xl"
+                                width={200}
+                                />
+                                <p className="text-tiny text-white italic uppercase font-bold pt-3">Deepfake detection</p>
+                            </CardHeader>
+                            <CardBody className="overflow-visible py-2 flex flex-col items-center">
+                                <p className='text-white font-medium text-lg text-left pl-4 pb-2'> This project addresses deepfake detection using advanced deep learning models, ResNet50 and Vision Transformer (ViT). Deepfakes, generated using AI to create realistic synthetic media, pose critical threats to privacy and information security</p>
+                                <a href='https://www.github.com/ClassicBSK/Deepfake_detection'>
                                     <Button variant="contained"> View Project</Button>
                                 </a>
                             </CardBody>
